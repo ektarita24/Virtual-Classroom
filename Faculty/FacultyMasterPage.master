@@ -1,0 +1,100 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="FacultyMasterPage.master.cs" Inherits="Faculty_FacultyMasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+     <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+            height: 94px;
+        }
+        .auto-style3 {
+            width: 55%;
+        }
+        .auto-style4 {
+            width: 100%;
+        }
+        .auto-style5 {
+            width: 79px;
+        }
+        .auto-style6 {
+            width: 210px;
+        }
+        .auto-style7 {
+            width: 100px;
+        }
+        .auto-style8 {
+            width: 89px;
+        }
+        .auto-style9 {
+            width: 111px;
+        }
+        .auto-style10 {
+            width: 71px;
+        }
+        .auto-style11 {
+            width: 180px;
+        }
+    </style>
+   
+</head>
+<body style="background-color:#FFFF99">
+    <form id="form1" runat="server">
+    <table class="auto-style1" style="width:100%">
+            <tr>
+                <td class="auto-style11">
+                    <asp:Image ID="Image1" runat="server" ImageAlign="Left" Height="145px" ImageUrl="~/Images/V.jpg" Width="102%" />
+                </td>
+                <td class="auto-style3">
+                    <asp:Image ID="Image2" runat="server" ImageAlign="Middle" Height="150px" ImageUrl="~/Images/virtual_classroom.jpg" Width="104%" />
+                </td>
+                <td style="width:25%">
+                    <asp:Image ID="Image3" runat="server" Height="152px" ImageAlign="Right" ImageUrl="~/Images/animated-teacher.gif" Width="213px" />
+                </td>
+            </tr>
+        </table>
+        <br />
+        <asp:Image ID="Image4" runat="server" Width="100%" Height="200px" ImageUrl="~/Images/images.jpg" />
+        <br />
+
+    
+    
+        <br />
+        <table class="auto-style4" style=" width:100%">
+            <tr style="background-color:#333333">
+                <td class="auto-style5" style="width:15%">
+                    <asp:HyperLink ID="HyperLink2" runat="server"  Font-Bold="True" ForeColor="White" Font-Size="Large" NavigateUrl="~/Faculty/WelcomeFaculty.aspx">HOME</asp:HyperLink> 
+                </td>
+                <td class="auto-style6" style="width:15%">
+                    <asp:HyperLink ID="HyperLink3" runat="server" Font-Bold="True" ForeColor="White" Font-Size="Large" NavigateUrl="~/Faculty/FacultyCoursesAvailable.aspx">VIEW COURSES</asp:HyperLink>
+                </td>
+                <td class="auto-style7" style="width:15%">
+                    <asp:HyperLink ID="HyperLink4" runat="server" Font-Bold="True" ForeColor="White" Font-Size="Large" NavigateUrl="~/Faculty/StudentResult.aspx">VIEW RESULT</asp:HyperLink>
+                </td>
+                <td class="auto-style8" style="width:15%">
+                    <asp:HyperLink ID="HyperLink5" runat="server" Font-Bold="True" ForeColor="White" Font-Size="Large" NavigateUrl="~/Faculty/FacultyAboutUs.aspx">ABOUT US</asp:HyperLink>  
+                </td>
+                <td class="auto-style9" style="width:15%">
+                    <asp:HyperLink ID="HyperLink6" runat="server" Font-Bold="True" ForeColor="White" Font-Size="Large" NavigateUrl="~/Faculty/FacultyContactUs.aspx">CONTACT US</asp:HyperLink> 
+                </td>
+                <td class="auto-style10" style="width:15%">
+                    <asp:HyperLink ID="HyperLink7" runat="server" Font-Bold="True" ForeColor="White" Font-Size="Large" NavigateUrl="~/Faculty/SetExam.aspx">EXAM SECTION</asp:HyperLink>   
+                </td>
+                <td style="width:15%">
+                    <asp:HyperLink ID="HyperLink1" runat="server" Font-Bold="True" ForeColor="White" Font-Size="Large" NavigateUrl="~/Home.aspx">SIGN OUT</asp:HyperLink>
+                </td>
+                
+            </tr>
+        </table>
+        <br />
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+        <br />
+        <asp:Label ID="Label1" runat="server" Width="100%"  BackColor="Aqua" ForeColor="Black" Text="&copy Copyrights Reserved virtualclassroom.com" Font-Italic="True" Font-Size="Medium"></asp:Label>
+
+    </form>
+</body>
+</html>
